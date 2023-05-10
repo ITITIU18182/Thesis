@@ -3,6 +3,36 @@ This is a research paper on the application of Blockchain technology and Verkle 
 
 During development, I applied the Typescript library which implements the KZG10 polynominal commitment scheme by weijiekoh. It can produce and verify proofs of one point per proof, or multiple points per proof.
 
+## Describe Error
+Due to some conflicts with Node.js version as well as TypeScript will report an error after installation but can still install and use the main function of the program.
+
+```
+npm ERR! command C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js install --force --cache=C:\Users\Admin\AppData\Local\npm-cache --prefer-offline=false --prefer-online=false --offline=false --no-progress --no-save --no-audit --include=dev --include=peer --include=optional --no-package-lock-only 
+--no-dry-run
+npm ERR! npm WARN using --force Recommended protections disabled.
+npm ERR! npm WARN old lockfile
+npm ERR! npm WARN old lockfile The package-lock.json file was created with an old version of npm,
+npm ERR! npm WARN old lockfile so supplemental metadata must be fetched from the registry.
+npm ERR! npm WARN old lockfile
+npm ERR! npm WARN old lockfile This is a one-time fix-up, please be patient...
+npm ERR! npm WARN old lockfile
+...
+```
+
+```
+node_modules/@types/babel__traverse/index.d.ts:68:50 - error TS1005: ']' expected.
+
+68 export type ArrayKeys<T> = keyof { [P in keyof T as T[P] extends any[] ? P : never]: P };
+
+node_modules/@types/babel__traverse/index.d.ts:68:53 - error TS1005: ';' expected.
+
+68 export type ArrayKeys<T> = keyof { [P in keyof T as T[P] extends any[] ? P : never]: P };
+
+node_modules/@types/babel__traverse/index.d.ts:68:58 - error TS1005: ';' expected.
+
+68 export type ArrayKeys<T> = keyof { [P in keyof T as T[P] extends any[] ? P : never]: P };
+```
+
 ## Functions
 
 ### `genCoefficients`: generate a polynominal from arbitrary values
