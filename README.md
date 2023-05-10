@@ -4,7 +4,7 @@ This is a research paper on the application of Blockchain technology and Verkle 
 During development, I applied the Typescript library which implements the KZG10 polynominal commitment scheme by weijiekoh. It can produce and verify proofs of one point per proof, or multiple points per proof.
 
 ## Describe Error
-Due to some conflicts with Node.js version as well as TypeScript will report an error after installation but can still install and use the main function of the program.
+Due to some conflicts with Node.js as well as TypeScript version will report an error after installation but can still install and use the main function of the program.
 
 ```
 npm ERR! command C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js install --force --cache=C:\Users\Admin\AppData\Local\npm-cache --prefer-offline=false --prefer-online=false --offline=false --no-progress --no-save --no-audit --include=dev --include=peer --include=optional --no-package-lock-only 
