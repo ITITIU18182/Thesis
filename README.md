@@ -5,6 +5,7 @@ During development, I applied the Typescript library which implements the KZG10 
 
 ## Describe Error
 Due to some conflicts with Node.js as well as TypeScript version will report an error after installation but can still install and use the main function of the program.
+Just ignore the error and run "npm run test" and "npm run build" to run the main funtion.
 
 ```
 npm ERR! command C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js install --force --cache=C:\Users\Admin\AppData\Local\npm-cache --prefer-offline=false --prefer-online=false --offline=false --no-progress --no-save --no-audit --include=dev --include=peer --include=optional --no-package-lock-only 
